@@ -96,5 +96,24 @@
                 </td>
             </tr>
         </table>
+        <hr>
+        <h4>
+            Code Display
+        </h4>
+        <blockquote>
+            How to Test if String Starts With Certain Characters in PHP
+            <p>Click <a href="https://stackoverflow.com/questions/2790899/how-to-check-if-a-string-starts-with-a-specified-string">here</a> to view solution</p>
+        </blockquote>
+        <p>
+            The following code snippet to test if string starts with certain characters:
+        </p>
+        <pre>
+        function startsWith($string, $startString) { 
+            $len = strlen($startString); 
+            return (substr($string, 0, $len) === $startString); 
+        } 
+        echo startsWith("cat", "c"); // true
+        echo startsWith("dog", "x"); // false
+        </pre>
     </body>
 </html>
